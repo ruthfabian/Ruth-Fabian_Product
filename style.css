@@ -4,54 +4,135 @@
   box-sizing: border-box; 
 } 
 
-.flexbox { 
- /* margin: 0 20rem ; */ 
-  display: flex; 
-  /* flex-wrap: wrap; 
-  align-items: center; */ 
-  justify-content: center; 
+html{
+  height: 100%;
+}
 
-  gap: 2rem; 
-} 
+#div{
+  background-color: rgb(254, 238, 224);
+  display: flex;
+  height: 100%;
+  padding: 40px 60px 40px 60px;
+  justify-content: center;
+}
 
-.class1 { 
-  background-color: red; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-} 
-.class2 { 
-  background-color: green; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
-} 
-.class3 { 
-  background-color: yellow; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
-  flex-grow: 2; 
-} 
-.class4 { 
-  background-color: blue; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
-} 
-.class5 { 
-  background-color: purple; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
-  flex-shrink: 5; 
-} 
-.class6 { 
-  background-color: lime; 
-  width: 5rem; 
-  height: 5rem; 
-  text-align: center; 
+.image{
+  justify-content: center;
+  align-items: center;
+}
+
+.image img{
+  border-radius: 15px 0px 0px 15px;
+}
+
+.text{
+  background-color: white;
+  height: 500px;
+  padding: 25px;
+  width: 400px;
+  border-radius: 0px 15px 15px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h6{
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.text h1{
+  width: 200px;
+  padding-bottom: 30px;
+}
+
+.description{
+  line-height: 25px;
+  width: 320px;
+  text-align: justify;
+}
+
+.prices{
+  display: flex;
+  align-items: center;
+}
+
+.price{
+  color: darkgreen;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.span{
+  color: black;
+  text-decoration: line-through;
+  padding-left: 20px;
+  font-size: 20px;
+  justify-content: center;
+  align-self: center;
+}
+
+.button-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.button img {
+  padding: 10px;
+}
+
+.button {
+  background-color: darkgreen;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text button:hover{
+  cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+  #div{
+    background-color: rgb(254, 238, 224);
+    display: flex;
+    height: 100%;
+    padding: 40px 60px 40px 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+
+  .image img{
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .text{
+    margin-top: 0px;
+    background-color: white;
+    height: 500px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .text h1{
+    width: 300px;
+  }
+  
+
 }
